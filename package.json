@@ -2,8 +2,11 @@
   "name": "web-based-audio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build",
+    "dev": "npm run dev --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
